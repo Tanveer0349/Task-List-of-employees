@@ -11,7 +11,7 @@ const Add = () => {
     try {
       await axios.post("https://641b1f8e1f5d999a445bf904.mockapi.io/Employee", {
         name: input,
-        id:new Date
+        id:new Date()
       });
 
       dispatch(addEmployee(input),setInput(''));
